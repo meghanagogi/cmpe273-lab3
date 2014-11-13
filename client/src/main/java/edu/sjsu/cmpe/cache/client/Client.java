@@ -29,8 +29,11 @@ public class Client {
         for(i=1;i<11;i++){
         dummy = consistentHash.get(i);
         dummy.put(i,str[i]);
+       
         value = dummy.get(i);
+        System.out.println("put("+i+"));
         System.out.println("get("+i+") => " + value);
+
         }
         
         int count = cacheList.size(); 
